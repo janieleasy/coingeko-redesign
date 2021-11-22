@@ -1,0 +1,27 @@
+.skeleton-item {
+  background-color: var(--skeleton-color);
+
+  overflow: hidden;
+  position: relative;
+}
+
+.skeleton-item::before {
+  content: '';
+  display: block;
+
+  position: absolute;
+  left: -40px;
+  top: 0;
+
+  height: 100%;
+  width: 40px;
+
+  background-color: var(--bg-color);
+  background-image: linear-gradient(to right, var(--skeleton-animation) 25%, var(--skeleton-animation-secondary) 50%, var(--skeleton-animation) 75%);
+
+  -webkit-animation: load 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  animation: load 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@-webkit-keyframes load { from { left: -20px; } to { left: 100%; } }
+@keyframes load { from { left: -20px; } to { left: 100%; } }

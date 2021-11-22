@@ -1,0 +1,44 @@
+.detail-chart-container {}
+
+
+.detail-tooltip-container {
+  min-width: 165px;
+  background-color: var(--bg-color);
+
+  border-radius: 15px;
+  box-shadow: 0px 8px 8px rgba(50, 50, 71, 0.08), 0px 8px 16px rgba(50, 50, 71, 0.06);
+  padding: 10px 14px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-tooltip-current-price {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+.detail-tooltip-current-time {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: normal;
+  color: var(--text-secondary);
+}
+
+
+
+
+.recharts-cartesian-grid-horizontal > line {
+  stroke: var(--text-third);
+}
+
+.recharts-cartesian-grid-horizontal line:last-of-type,
+.recharts-cartesian-grid-horizontal line:nth-last-of-type(2) {
+  opacity: 0;
+}
+
+.recharts-cartesian-axis-tick text {
+  fill: var(--text-secondary);
+}

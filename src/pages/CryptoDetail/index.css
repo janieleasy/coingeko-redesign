@@ -1,0 +1,20 @@
+.nav-container .nav-item.left.detail-nav-item {
+  width: 80%;
+  
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 720px) {
+  .detail-nav-item {
+    padding-left: 20px;
+  }
+}
+
+.crypto-symbol {
+  margin-right: 6px;
+}
+
+.crypto-name {
+  color: var(--text-secondary);
+}

@@ -1,0 +1,35 @@
+.nav-container .nav-item.mid.search-nav-item {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: bold;
+  color: var(--text-primary);
+
+  display: flex;
+  align-items: center;
+}
+
+
+
+.search-crypto-list-container {
+  padding-top: 57px;
+}
+
+@media (max-width: 720px) {
+  .search-crypto-list-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.search-crypto-noresult {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 17px;
+
+  text-transform: capitalize;
+
+  display: flex;
+  justify-content: center;
+  color: var(--text-secondary);
+
+}

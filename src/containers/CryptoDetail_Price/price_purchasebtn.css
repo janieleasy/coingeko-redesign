@@ -1,0 +1,29 @@
+.detail-purchasebtn-container {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  position: fixed;
+  bottom: 16px;
+  left: 0;
+}
+
+.detail-purchasebtn-button {
+  height: 46px;
+  width: 65%;
+  max-width: 364px;
+
+  background-color: var(--theme-color);
+  border: 0;
+  outline: 0;
+  border-radius: 12px;
+
+
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: bold;  
+  color: #fff;
+  text-transform: capitalize;
+
+  cursor: pointer;
+}

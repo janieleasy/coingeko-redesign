@@ -1,0 +1,84 @@
+
+.home-crypto-title {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: var(--text-secondary);
+
+  position: fixed;
+
+  width: 80%;
+  margin: 0 auto;
+
+  top: 153px;
+  background-color: var(--bg-color);
+}
+
+@media (max-width: 720px) {
+  .home-crypto-title  {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+
+.home-skeleton-item-container {
+  justify-content: space-between;
+}
+
+
+.home-crypto-list-container {
+  padding-top: 88px
+}
+
+@media (max-width: 720px) {
+  .home-crypto-list-container  {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.home-crypto-name {
+  display: flex;
+  align-items: center;
+
+  width: 26%;
+}
+
+.home-crypto-item-container .crypto-rank {
+  width: 6%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.home-crypto-item-container .crypto-price {
+  width: 29%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.home-crypto-item-container .crypto-change {
+  width: 16%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.home-crypto-item-container .crypto-marketcap {
+  width: 23%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.home-crypto-nodata {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 17px;
+
+  text-transform: capitalize;
+
+  /* display: flex;
+  justify-content: center; */
+  color: var(--text-secondary);
+
+}

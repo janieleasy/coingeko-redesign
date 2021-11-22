@@ -1,25 +1,38 @@
-import logo from './logo.svg';
+import React, { Suspense, useEffect } from 'react';
+import {
+  BrowserRouter as Router,
+  // Switch,
+  Route,
+  Redirect,
+} from 'react-router-dom';
+import CacheRoute, { CacheSwitch } from 'react-router-cache-route';
+import Loading from './pages/Loading';
 import './App.css';
 
-function App() {
+const Home = React.lazy(() => import('./pages/Home'));
+const Search = React.lazy(() => import('./pages/Search'));
+const CryptoDetail = React.lazy(() => import('./pages/CryptoDetail'));
+
+export default function App() {
+  useEffect(() => {
+    const mode = localStorage.getItem('mode');
+    if (mode) {
+      document.documentElement.className = mode;
+    } else {
+      localStorage.setItem('mode', 'light');
+    }
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Suspense fallback={<Loading />}>
+        <CacheSwitch>
+          <Redirect exact from="/" to="/home" />
+          <CacheRoute path="/home" component={Home} />
+          <Route path="/search" component={Search} />
+          <Route path="/crypto/:cryptoId" component={CryptoDetail} />
+        </CacheSwitch>
+      </Suspense>
+    </Router>
   );
 }
-
-export default App;

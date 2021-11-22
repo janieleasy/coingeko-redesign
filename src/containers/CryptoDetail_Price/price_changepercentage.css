@@ -1,0 +1,49 @@
+.detail-price-change-percentage-container {
+  display: flex;
+  padding: 0 10px;
+}
+
+.detail-pcp-item {
+  flex: 1 1 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail-pcp-input {
+  display: none;
+}
+
+.detail-pcp-label {
+  color: var(--text-primary);
+  text-transform: uppercase;
+
+
+  width: 44px;
+  padding: 6px 0;
+  border-radius: 13px;
+
+  display: flex;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.detail-pcp-input:checked + .detail-pcp-label {
+  color: var(--theme-color);
+  background-color: var(--theme-color-opacity);
+  transition: all 0.15s;
+}
+
+.detail-pcp-change {
+  color: var(--text-primary);
+  margin-top: 10px;  
+}
+
+.detail-pcp-label,
+.detail-pcp-change {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 14px;
+}

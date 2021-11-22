@@ -1,0 +1,57 @@
+.skeleton-crypto-item-container {
+  width: 100%;
+  height: 48px;
+  
+  display: flex;
+  align-items: center;
+}
+  
+.skeleton-crypto-img {
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+
+
+.crypto-item-container {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 17px;
+
+  width: 100%;
+  height: 48px;
+
+  border-bottom: var(--border-bottom);
+}
+
+.crypto-item-container:last-child {
+  border-bottom: none;
+}
+
+.crypto-link {
+  text-decoration: none;
+  color: var(--text-primary);
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+.crypto-image {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+
+  margin-right: 6px;
+}
+
+.crypto-symbol {
+  font-weight: bold;
+  text-transform: uppercase;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

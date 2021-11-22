@@ -1,0 +1,50 @@
+.nav-container {
+  width: 100%;
+  height: 60px;
+  background-color: var(--bg-color);
+}
+
+.nav-container .nav-list {
+  width: 100%;
+  height: 100%;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-container .nav-item {
+  height: 100%;
+  position: absolute;
+}
+
+.nav-container .nav-item.left {
+  width: 60px;
+  left: 0;
+}
+
+.nav-container .nav-item.mid {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-container .nav-item.right {
+  width: 60px;
+  right: 0;
+}
+
+.nav-container .nav-link {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.nav-container button {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+}

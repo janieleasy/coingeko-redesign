@@ -1,0 +1,56 @@
+{
+    "order": [
+      {
+        "shortname": "ranking",
+        "dir": "down",
+        "name": "highest ranking",
+        "query": "&order=market_cap_desc",
+        "checked": false
+      },
+      {
+        "shortname": "ranking",
+        "dir": "up",
+        "name": "lowest ranking",
+        "query": "&order=market_cap_asc",
+        "checked": false
+      },
+      {
+        "shortname": "market cap",
+        "dir": "down",
+        "name": "largest market cap",
+        "query": "&order=market_cap_desc",
+        "checked": true
+      },
+      {
+        "shortname": "market cap",
+        "dir": "up",
+        "name": "smallest market cap",
+        "query": "&order=market_cap_asc",
+        "checked": false
+      },
+      {
+        "shortname": "price",
+        "dir": "down",
+        "name": "highest price",
+        "query": "&order=price_desc",
+        "checked": false
+      },
+      {
+        "shortname": "price",
+        "dir": "up",
+        "name": "lowest price",
+        "query": "&order=price_asc",
+        "checked": false
+      }
+    ],
+    "timeperiod": [
+      { "name": "1h", "query": "&price_change_percentage=1h", "checked": false },
+      { "name": "24h", "query": "&price_change_percentage=24h", "checked": true },
+      { "name": "7d", "query": "&price_change_percentage=7d", "checked": false }
+    ],
+    "totalpage": [
+      { "name": "all", "query": "&per_page=100", "num": null, "checked": true },
+      { "name": "top 100", "query": "&per_page=50", "num": 1, "checked": false },
+      { "name": "top 300", "query": "&per_page=60", "num": 3, "checked": false }
+    ]
+}

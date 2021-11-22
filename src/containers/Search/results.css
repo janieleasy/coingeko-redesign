@@ -1,0 +1,63 @@
+.search-crypto-list-header {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 17px;
+
+  text-transform: capitalize;
+  padding: 4px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-crypto-list-header .list-title {
+  color: var(--text-secondary);
+}
+
+.search-crypto-list-header .clear-btn {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 17px;
+
+  text-transform: capitalize;
+
+  color: var(--theme-color);
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+
+  padding: 0;
+  cursor: pointer;
+}
+
+.search-crypto-list-body {
+  padding-bottom: 32px;
+}
+
+
+
+
+.search-crypto-item-container .crypto-symbol {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--text-primary);
+
+  margin-right: 6px;
+}
+
+.search-crypto-item-container .crypto-name {
+  color: var(--text-secondary);
+}
+
+.search-crypto-item-container .crypto-rank {
+  color: var(--text-secondary);
+  margin-left: auto;
+
+  text-align: right;
+}
+
+
+.search-skeleton-right {
+  margin-left: auto;
+}
