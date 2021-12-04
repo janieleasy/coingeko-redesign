@@ -9,3 +9,5 @@ Building this web using a lot of technologies including the following
 - Recharts
 - Fetching data from CoinGeko free API
 - LocalStorage
+
+![Preview](preview.png?raw=true)
