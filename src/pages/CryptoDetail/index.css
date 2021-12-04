@@ -1,5 +1,6 @@
 .nav-container .nav-item.left.detail-nav-item {
   width: 80%;
+  max-width: 800px;
   
   display: flex;
   align-items: center;

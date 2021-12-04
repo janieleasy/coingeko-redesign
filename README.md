@@ -1,7 +1,11 @@
 ## Redesigned CoinGeko
-Redesigned CoinGeko from Scratch Using React
 
-## Summary
-It is a responsive web App, can be browsed both on tablet and phone.
-All Data is powered by CoinGeko API.
+This React Project is a responsive cryptocurrency price tracker can be browsed on desktop, tablet and phone
 
+Building this web using a lot of technologies including the following
+
+- React hooks
+- React Router
+- Recharts
+- Fetching data from CoinGeko free API
+- LocalStorage
